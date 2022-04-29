@@ -1,0 +1,221 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+nav a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: chocolate;
+}
+
+.autor {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
+    font-size: 9px;
+}
+
+.autor-nacion {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
+    font-size: 8px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: chocolate;
+    background-color: black;
+    position: bottom;
+}
+
+.footer a {
+    color: chocolate;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.division {
+    text-align: left;
+    color: chocolate;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.header {
+    text-align: center;
+    color: chocolate;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+nav a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: chocolate;
+}
+
+.contenedor-grid {
+    border: 1px solid aliceblue;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 450px);
+    gap: 1px;
+    grid-template-areas:
+        "imagen-principal imagen-principal imagen-principal imagen-principal"
+        "review-strato review-strato foto-peppers foto-peppers"
+        "cobain cobain cobain cobain";
+}
+
+.imagen-principal {
+    grid-area: imagen-principal;
+    background-color: darkgray;
+}
+
+.foto-peppers {
+    grid-area: foto-peppers;
+}
+
+.review-strato {
+    grid-area: review-strato;
+}
+
+.cobain {
+    grid-area: cobain;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
+    font-size: 15px;
+}
+
+.instrumentos {
+    background-color: burlywood;
+    text-decoration: none;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-direction: row;
+    color: chocolate;
+    margin-top: auto;
+}
+
+.contenedor-grid-instrumentos {
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(3, 55%);
+    grid-template-rows: repeat(3, 32%);
+    gap: 12px;
+    grid-template-areas:
+        "instrumento-uno instrumento-dos instrumento-cinco"
+        "instrumento-cuatro instrumento-seis instrumento-siete"
+        "instrumento-cuatro instrumento-tres instrumento-siete";
+}
+
+.instrumento-uno {
+    grid-area: instrumento-uno;
+    background-color: white;
+}
+
+.instrumento-dos {
+    grid-area: instrumento-dos;
+    background-color: white;
+}
+
+.instrumento-tres {
+    grid-area: instrumento-tres;
+    background-color: white;
+}
+
+.instrumento-cuatro {
+    grid-area: instrumento-cuatro;
+    background-color: white;
+}
+
+.instrumento-cinco {
+    grid-area: instrumento-cinco;
+    background-color: white;
+}
+
+.instrumento-seis {
+    grid-area: instrumento-seis;
+    background-color: white;
+}
+
+.instrumento-siete {
+    grid-area: instrumento-siete;
+    background-color: white;
+}
+
+p {
+    background-color: white;
+}
+
+@media screen and (max-width: 780px) {
+    .contenedor-grid-instrumentos {
+        border: 1px solid white;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(4, 32%);
+        gap: 6px;
+        grid-template-areas:
+            "instrumento-uno instrumento-dos"
+            "instrumento-cuatro instrumento-cinco"
+            "instrumento-seis instrumento-siete"
+            "instrumento-tres";
+    }
+    .instrumento-uno {
+        grid-area: instrumento-uno;
+        background-color: white;
+    }
+    
+    .instrumento-dos {
+        grid-area: instrumento-dos;
+        background-color: white;
+    }
+    
+    .instrumento-tres {
+        grid-area: instrumento-tres;
+        background-color: white;
+    }
+    
+    .instrumento-cuatro {
+        grid-area: instrumento-cuatro;
+        background-color: white;
+    }
+    
+    .instrumento-cinco {
+        grid-area: instrumento-cinco;
+        background-color: white;
+    }
+    
+    .instrumento-seis {
+        grid-area: instrumento-seis;
+        background-color: white;
+    }
+    .instrumento-siete {
+        grid-area: instrumento-siete;
+        background-color: white;
+    }
